@@ -178,7 +178,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-12-28 19:51:42" itemprop="dateModified" datetime="2022-12-28T19:51:42+08:00">2022-12-28</time>
+      <time title="修改时间：2022-12-30 13:24:06" itemprop="dateModified" datetime="2022-12-30T13:24:06+08:00">2022-12-30</time>
     </span>
 
   
@@ -192,7 +192,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>本博客用于展示聋哑人语音合成的相关成果，其中包括轻度聋哑人和重度聋哑人的原音和语音合成的音频效果，以让读者更有效的了解本人所做工作的成果</p>
-<h2 id="正常人原音（标贝标准女声）"><a href="#正常人原音（标贝标准女声）" class="headerlink" title="正常人原音（标贝标准女声）"></a>正常人原音（标贝标准女声）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 以下是原音展示，语料内容分别为：</span><br><span class="line">    &gt; <span class="string">&quot;邓小平与撒切尔会晤&quot;</span></span><br><span class="line">    &gt; <span class="string">&quot;假语村言别再拥抱我&quot;</span></span><br></pre></td></tr></table></figure>
+<h1 id="正常人原音（标贝标准女声）"><a href="#正常人原音（标贝标准女声）" class="headerlink" title="正常人原音（标贝标准女声）"></a>正常人原音（标贝标准女声）</h1><h2 id="原音"><a href="#原音" class="headerlink" title="原音"></a>原音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 以下是原音展示，语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;邓小平与撒切尔会晤&quot;</span></span><br><span class="line">2、<span class="string">&quot;假语村言别再拥抱我&quot;</span></span><br></pre></td></tr></table></figure>
 
 <audio controls>
   <source src="/audio/原音-biaobe-邓小平与撒切尔会晤.wav" type="audio/mpeg">
@@ -201,8 +201,7 @@
   <source src="/audio/原音-biaobe-假语村言别再拥抱我.wav" type="audio/mpeg">
 </audio>
 
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 声学模型为Tacotron2, 声码器为HIFI-GAN；以下是合成语音展示，语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;对不起我没有听明白请您再讲一遍&quot;</span> -停顿</span><br><span class="line">2、<span class="string">&quot;对不起我没有听明白请您再讲一遍&quot;</span> -无停顿</span><br><span class="line">3、<span class="string">&quot;今天是十二月二十七日星期二&quot;</span> -停顿</span><br></pre></td></tr></table></figure>
+<h2 id="Tacotron2-HIFI-GAN合成音"><a href="#Tacotron2-HIFI-GAN合成音" class="headerlink" title="Tacotron2+HIFI-GAN合成音"></a>Tacotron2+HIFI-GAN合成音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 声学模型为Tacotron2, 声码器为HIFI-GAN；以下是合成语音展示，语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;对不起我没有听明白请您再讲一遍&quot;</span> -停顿</span><br><span class="line">2、<span class="string">&quot;对不起我没有听明白请您再讲一遍&quot;</span> -无停顿</span><br><span class="line">3、<span class="string">&quot;今天是十二月二十七日星期二&quot;</span> -停顿</span><br></pre></td></tr></table></figure>
 
 <audio controls>
   <source src="/audio/合成-biaobe-对不起我没有听明白请您再讲一遍-停顿.wav" type="audio/mpeg">
@@ -214,8 +213,7 @@
   <source src="/audio/合成-biaobe-今天是十二月二十七日星期二-停顿.wav" type="audio/mpeg">
 </audio>
 
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 语音转换模型使用VAE, 原说话人为AISHELL3数据集中1593号女说话人，</span><br><span class="line">以下是语音转换的结果展示，语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;邓小平与撒切尔会晤&quot;</span>  ---&gt;  <span class="string">&quot;奥斯卡真是一位出色的鼓手&quot;</span></span><br><span class="line">$ 左边音频为AISHELL3数据集中1593号女说话人, 右边音频为转换后标贝标准女音</span><br></pre></td></tr></table></figure>
+<h2 id="Adain语音转换音频"><a href="#Adain语音转换音频" class="headerlink" title="Adain语音转换音频"></a>Adain语音转换音频</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 语音转换模型使用VAE解耦说话人音色和内容信息, 并将解耦之后的内容和音色重组, 达到语音转换的效果。 </span><br><span class="line">$ 原说话人为AISHELL3数据集中1593号女说话人, 以下是语音转换的结果展示，语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;邓小平与撒切尔会晤&quot;</span>  ---&gt;  <span class="string">&quot;奥斯卡真是一位出色的鼓手&quot;</span></span><br><span class="line">$ 左边音频为AISHELL3数据集中1593号女说话人, 右边音频为转换后标贝标准女音</span><br></pre></td></tr></table></figure>
 
 <audio controls>
   <source src="/audio/原音-ai31593-奥斯卡真是一位出色的鼓手.wav" type="audio/mpeg">
@@ -225,7 +223,22 @@
 </audio>
 
 
-<h2 id="聋哑人原音（dm004号）"><a href="#聋哑人原音（dm004号）" class="headerlink" title="聋哑人原音（dm004号）"></a>聋哑人原音（dm004号）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;我觉得自己又胖了&quot;</span></span><br><span class="line">2、<span class="string">&quot;我觉得自己又胖了&quot;</span> 待修改！</span><br></pre></td></tr></table></figure>
+<h2 id="SV2TTS克隆音"><a href="#SV2TTS克隆音" class="headerlink" title="SV2TTS克隆音"></a>SV2TTS克隆音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ 语音转换模型使用ECAPA-TDNN作为说话人嵌入码提取器, 声学模型为Tacotorn2, 声码器模型为HIFI-GAN; </span><br><span class="line">$ 原基线模型为LSTM说话人嵌入码提取器, 声学模型为Tacotorn2, 声码器模型为HIFI-GAN; </span><br><span class="line">&amp; 以下音频左列为基线模型SV2TTS的克隆语音, 右列为ECAPA-TDNN语音克隆的语音, 语料内容分别为：</span><br><span class="line"><span class="string">&quot;第一列&quot;</span>: <span class="string">&quot;邓小平与撒切尔会晤&quot;</span>（克隆时注册语句）  ---&gt;  <span class="string">&quot;假语村言别再拥抱我&quot;</span>（克隆语句）  </span><br><span class="line"><span class="string">&quot;第二列&quot;</span>: <span class="string">&quot;假语村言别再拥抱我&quot;</span>（克隆时注册语句）   ---&gt;  <span class="string">&quot;邓小平与撒切尔会晤&quot;</span>（克隆语句）</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/克隆2-biaobe-假语村言别再拥抱我.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/克隆1-biaobe-假语村言别再拥抱我.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/克隆2-biaobe-邓小平与撒切尔会晤.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/克隆1-biaobe-邓小平与撒切尔会晤.wav" type="audio/mpeg">
+</audio>
+
+
+<h1 id="聋哑人原音（dm004号）"><a href="#聋哑人原音（dm004号）" class="headerlink" title="聋哑人原音（dm004号）"></a>聋哑人原音（dm004号）</h1><h2 id="原音-1"><a href="#原音-1" class="headerlink" title="原音"></a>原音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;我觉得自己又胖了&quot;</span></span><br><span class="line">2、<span class="string">&quot;我觉得自己又胖了&quot;</span> 待修改！</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/原音-dm004-我觉得自己又胖了.wav" type="audio/mpeg">
 </audio>
@@ -233,8 +246,7 @@
   <source src="/audio/原音-dm004-我觉得自己又胖了.wav" type="audio/mpeg">
 </audio>
 
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ 语音转换模型使用VAE, 原说话人为标贝标准女音，</span><br><span class="line">以下是语音转换的结果展示，语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;我觉得自己又胖了&quot;</span>  ---&gt;  <span class="string">&quot;邓小平与撒切尔会晤&quot;</span></span><br><span class="line">2、<span class="string">&quot;我觉得自己又胖了&quot;</span>  ---&gt;  <span class="string">&quot;假语村言别再拥抱我&quot;</span></span><br><span class="line">$ 左边音频原为说话人标贝标准女音, 右边音频为转换后dm004号聋哑人语音</span><br></pre></td></tr></table></figure>
+<h2 id="Adain语音转换音频-1"><a href="#Adain语音转换音频-1" class="headerlink" title="Adain语音转换音频"></a>Adain语音转换音频</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ 语音转换模型使用VAE解耦说话人音色和内容信息, 并将解耦之后的内容和音色重组, 达到语音转换的效果。 </span><br><span class="line">$ 原说话人为上述标贝标准女音, 以下是语音转换的结果展示,语料内容分别为：</span><br><span class="line">1、<span class="string">&quot;我觉得自己又胖了&quot;</span>  ---&gt;  <span class="string">&quot;邓小平与撒切尔会晤&quot;</span></span><br><span class="line">2、<span class="string">&quot;我觉得自己又胖了&quot;</span>  ---&gt;  <span class="string">&quot;假语村言别再拥抱我&quot;</span></span><br><span class="line">$ 左边音频原为说话人标贝标准女音, 右边音频为转换后dm004号聋哑人语音</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/原音-biaobe-邓小平与撒切尔会晤.wav" type="audio/mpeg">
 </audio>
@@ -249,19 +261,24 @@
 </audio>
 
 
-<h3 id="正常人语音合成效果"><a href="#正常人语音合成效果" class="headerlink" title="正常人语音合成效果"></a>正常人语音合成效果</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">### Generate static files</span></span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo generate</span><br><span class="line">markdown: open preview to the side</span><br></pre></td></tr></table></figure>
+<h2 id="SV2TTS克隆音-1"><a href="#SV2TTS克隆音-1" class="headerlink" title="SV2TTS克隆音"></a>SV2TTS克隆音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ 语音转换模型使用ECAPA-TDNN作为说话人嵌入码提取器, 声学模型为Tacotorn2, 声码器模型为HIFI-GAN; </span><br><span class="line">$ 原基线模型为LSTM说话人嵌入码提取器, 声学模型为Tacotorn2, 声码器模型为HIFI-GAN; </span><br><span class="line">&amp; 以下音频左列为基线模型SV2TTS的克隆语音, 右列为ECAPA-TDNN语音克隆的语音, 语料内容分别为：</span><br><span class="line"><span class="string">&quot;第一列&quot;</span>: <span class="string">&quot;我觉得自己又胖了&quot;</span>（克隆时注册语句）  ---&gt;  <span class="string">&quot;假语村言别再拥抱我&quot;</span>（克隆语句）  </span><br><span class="line"><span class="string">&quot;第二列&quot;</span>: <span class="string">&quot;我觉得自己又胖了&quot;</span>（克隆时注册语句）   ---&gt;  <span class="string">&quot;邓小平与撒切尔会晤&quot;</span>（克隆语句）</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/克隆1-dm004-假语村言别再拥抱我.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/克隆1-dm004-邓小平与撒切尔会晤.wav" type="audio/mpeg">
+</audio>
 
 
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-``` --&gt;
-&lt;!-- ![1](/images/1.jpg) --&gt;
-&lt;!-- &lt;img src=&#39;/images/1.jpg&#39; alt=&#39;美女与野兽&#39;&gt; --&gt;
-&lt;!-- hexo s
+<!-- ``` -->
+<!-- ![1](/images/1.jpg) -->
+<!-- <img src='/images/1.jpg' alt='美女与野兽'> -->
+<!-- hexo s
 hexo g
-hexd d
+hexd d -->
 
 
-</code></pre>
+
 
       
     </div>
