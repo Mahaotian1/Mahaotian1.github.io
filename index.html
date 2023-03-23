@@ -209,7 +209,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-03-20 21:45:03" itemprop="dateModified" datetime="2023-03-20T21:45:03+08:00">2023-03-20</time>
+      <time title="修改时间：2023-03-23 19:32:55" itemprop="dateModified" datetime="2023-03-23T19:32:55+08:00">2023-03-23</time>
     </span>
 
   
@@ -257,6 +257,26 @@
   <source src="/audio/合成-biaobe-HOWAREYOU是什么意思.wav" type="audio/mpeg">
 </audio>
 
+<h2 id="聋哑人语音特征分析的音频"><a href="#聋哑人语音特征分析的音频" class="headerlink" title="聋哑人语音特征分析的音频"></a>聋哑人语音特征分析的音频</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ 以下是聋哑人语音特征分析的音频:</span><br><span class="line">$ 内容均为我觉得自己又胖了</span><br><span class="line">从上到下、从左到右顺序的音频分别是：</span><br><span class="line">1、健听人（女）语音    ; 2、健听人（男）语音</span><br><span class="line">3、轻残聋哑人（女）语音; 4、轻残聋哑人（男）语音</span><br><span class="line">5、重残聋哑人（女）语音; 6、重残聋哑人（男）语音</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/dm004m-我觉得自己又胖了.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm007f-我觉得自己又胖了.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-dm004-我觉得自己又胖了.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm001-我觉得自己又胖了.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/dm010-我觉得自己又胖了.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm008-我觉得自己又胖了" type="audio/mpeg">
+</audio>
+
 <h1 id="第三章-面向轻残聋哑人的语音转换和合成方法"><a href="#第三章-面向轻残聋哑人的语音转换和合成方法" class="headerlink" title="第三章 面向轻残聋哑人的语音转换和合成方法"></a>第三章 面向轻残聋哑人的语音转换和合成方法</h1><h2 id="基线结果"><a href="#基线结果" class="headerlink" title="基线结果"></a>基线结果</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 基线结果的声学模型为Tacotron2, 声码器为HiFi-GAN；以下是对合成语音的展示（聋哑人语音没有经过任何处理直接进行训练）：</span><br><span class="line">第1行：左列为健听人原音，内容为：<span class="string">&quot;邓小平与撒切尔会晤&quot;</span>; 右列为健听人合成音，内容为：<span class="string">&quot;对不起我没有听明白请您再讲一遍&quot;</span></span><br><span class="line">第2行：左列为轻残dm004原音，内容为：<span class="string">&quot;我觉得自己又胖了&quot;</span>; 右列为轻残dm004合成音，内容为：<span class="string">&quot;我觉得自己又胖了&quot;</span>（声码器Griffin-Lim）</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/原音-biaobe-邓小平与撒切尔会晤.wav" type="audio/mpeg">
@@ -298,7 +318,39 @@
   <source src="/audio/转换合成-dm004-对不起我没有听明白请您再讲一遍.wav" type="audio/mpeg">
 </audio>
 
-<h1 id="第四章-面向重残聋哑人的语音克隆方法"><a href="#第四章-面向重残聋哑人的语音克隆方法" class="headerlink" title="第四章 面向重残聋哑人的语音克隆方法"></a>第四章 面向重残聋哑人的语音克隆方法</h1><h2 id="不同数量平均嵌入码的克隆性能对比"><a href="#不同数量平均嵌入码的克隆性能对比" class="headerlink" title="不同数量平均嵌入码的克隆性能对比"></a>不同数量平均嵌入码的克隆性能对比</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ 以下是不同数量平均嵌入码的克隆结果展示：</span><br><span class="line">第1行：原音, 语料内容为:<span class="string">&quot;他眼前燃起一盏灯&quot;</span></span><br><span class="line">第2行：单句克隆音</span><br><span class="line">第3行：三句平均嵌入码克隆音</span><br><span class="line">第4行：五句平均嵌入码克隆音</span><br></pre></td></tr></table></figure>
+<h1 id="第四章-面向重残聋哑人的语音克隆方法"><a href="#第四章-面向重残聋哑人的语音克隆方法" class="headerlink" title="第四章 面向重残聋哑人的语音克隆方法"></a>第四章 面向重残聋哑人的语音克隆方法</h1><h2 id="ESD数据集部分语音"><a href="#ESD数据集部分语音" class="headerlink" title="ESD数据集部分语音"></a>ESD数据集部分语音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ 以下是ESD数据集中部分说话人同一语料内容不同情感风格的语音。</span><br><span class="line">$ 左列是0001号说话人语音（内容是：打远一看他们的确很是美丽）;右列是0005号说话人语音（内容是：英国的哲学家曾经说过）</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/0001_000351.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/0005_000352.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/0001_000701.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/0005_000702.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/0001_000001.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/0005_000002.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/0001_001051.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/0005_001052.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/0001_001401.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/0005_001402.wav" type="audio/mpeg">
+</audio>
+
+<h2 id="不同数量平均嵌入码的克隆性能对比"><a href="#不同数量平均嵌入码的克隆性能对比" class="headerlink" title="不同数量平均嵌入码的克隆性能对比"></a>不同数量平均嵌入码的克隆性能对比</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ 以下是不同数量平均嵌入码的克隆结果展示：</span><br><span class="line">第1行：原音, 语料内容为:<span class="string">&quot;他眼前燃起一盏灯&quot;</span></span><br><span class="line">第2行：单句克隆音</span><br><span class="line">第3行：三句平均嵌入码克隆音</span><br><span class="line">第4行：五句平均嵌入码克隆音</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/dm009_他眼前燃起一盏灯.wav" type="audio/mpeg">
 </audio>
@@ -357,9 +409,40 @@
   <source src="/audio/原音-0002-5.wav" type="audio/mpeg">
 </audio>
 <audio controls>
-  <source src="/audio/方法2-0002-5.wav" type="audio/mpeg">
+  <source src="/audio/方法1-0002-5.wav" type="audio/mpeg">
 </audio>
 
+<h3 id="闭集健听人（ESD-0004号）"><a href="#闭集健听人（ESD-0004号）" class="headerlink" title="闭集健听人（ESD-0004号）"></a>闭集健听人（ESD-0004号）</h3><h4 id="原音-amp-克隆效果-1"><a href="#原音-amp-克隆效果-1" class="headerlink" title="原音&amp;克隆效果"></a>原音&amp;克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;是的他很狡猾，经常陷害他人&quot;</span></span><br><span class="line">2、<span class="string">&quot;她女儿和她妈妈长得很像&quot;</span></span><br><span class="line">3、<span class="string">&quot;没关系，也许他老婆会泄露秘密&quot;</span></span><br><span class="line">4、<span class="string">&quot;打远一看他们的确很是美丽&quot;</span></span><br><span class="line">5、<span class="string">&quot;我老家在北京&quot;</span></span><br><span class="line">$ 左列为原音，右列为克隆音</span><br><span class="line">$ 第一行至第五行分别为Angry、Happy、Neutral、Sad和Surprise的风格情感</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/原音-0004-1.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法1-0004-1.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-2.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法1-0004-2.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-3.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法1-0004-3.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-4.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法1-0004-4.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-5.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法1-0004-5.wav" type="audio/mpeg">
+</audio>
 
 <h3 id="开集健听人（标贝科技标准女声）"><a href="#开集健听人（标贝科技标准女声）" class="headerlink" title="开集健听人（标贝科技标准女声）"></a>开集健听人（标贝科技标准女声）</h3><h4 id="克隆效果"><a href="#克隆效果" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 原音请见第2章</span><br><span class="line">$ 克隆的语料内容为：</span><br><span class="line"><span class="string">&quot;邓小平与撒切尔会晤&quot;</span>（克隆时注册语句）  ---&gt;  <span class="string">&quot;我是顺路过来跟你告别的&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频风格情感依次为Angry、Happy、Neutral、Sad和Surprise：</span><br></pre></td></tr></table></figure>
 <audio controls>
@@ -378,7 +461,32 @@
   <source src="/audio/方法1-biaobe-我是顺路过来跟你告别的-su.wav" type="audio/mpeg">
 </audio>
 
-<h3 id="开集重残聋哑人（dm007）"><a href="#开集重残聋哑人（dm007）" class="headerlink" title="开集重残聋哑人（dm007）"></a>开集重残聋哑人（dm007）</h3><h4 id="原音"><a href="#原音" class="headerlink" title="原音"></a>原音</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;高压铁塔下的低矮棚屋&quot;</span></span><br><span class="line">2、<span class="string">&quot;约两万零两百人受影响&quot;</span> </span><br></pre></td></tr></table></figure>
+<h3 id="开集重残聋哑人（dm014）"><a href="#开集重残聋哑人（dm014）" class="headerlink" title="开集重残聋哑人（dm014）"></a>开集重残聋哑人（dm014）</h3><h4 id="原音"><a href="#原音" class="headerlink" title="原音"></a>原音</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;我觉得自己又胖了&quot;</span></span><br><span class="line">2、<span class="string">&quot;我们应该永葆青春&quot;</span> </span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/dm008-呜呜1.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm008-呜呜2.wav" type="audio/mpeg">
+</audio>
+
+<h4 id="克隆效果-1"><a href="#克隆效果-1" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 克隆的语料内容为：</span><br><span class="line">五句平均嵌入码  ---&gt;  <span class="string">&quot;我是顺路过来跟你告别的&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频的风格依次由闭集说话人Angry、Happy、Neutral、Sad和Surprise的基频风格迁移而成：</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/test1.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/test2.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/test3.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/test4.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/test5.wav" type="audio/mpeg">
+</audio>
+
+<h3 id="开集重残聋哑人（dm007）"><a href="#开集重残聋哑人（dm007）" class="headerlink" title="开集重残聋哑人（dm007）"></a>开集重残聋哑人（dm007）</h3><h4 id="原音-1"><a href="#原音-1" class="headerlink" title="原音"></a>原音</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;高压铁塔下的低矮棚屋&quot;</span></span><br><span class="line">2、<span class="string">&quot;约两万零两百人受影响&quot;</span> </span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/原音-dm007-呜呜1.wav" type="audio/mpeg">
 </audio>
@@ -386,19 +494,19 @@
   <source src="/audio/原音-dm007-呜呜2.wav" type="audio/mpeg">
 </audio>
 
-<h4 id="克隆效果-1"><a href="#克隆效果-1" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 克隆的语料内容为：</span><br><span class="line"><span class="string">&quot;不要轻易相信别人&quot;</span>（克隆时注册语句）  ---&gt;  <span class="string">&quot;跳舞好难啊&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频的风格依次由闭集说话人Angry、Happy、Neutral、Sad和Surprise的基频风格迁移而成：</span><br></pre></td></tr></table></figure>
+<h4 id="克隆效果-2"><a href="#克隆效果-2" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 克隆的语料内容为：</span><br><span class="line">五句平均嵌入码  ---&gt;  <span class="string">&quot;我是顺路过来跟你告别的&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频的风格依次由闭集说话人Angry、Happy、Neutral、Sad和Surprise的基频风格迁移而成：</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/方法1-dm007-我是顺路过来跟你告别的-a.wav" type="audio/mpeg">
 </audio>
 <audio controls>
   <source src="/audio/方法1-dm007-我是顺路过来跟你告别的-h.wav" type="audio/mpeg">
 </audio>
-<audio controls>
+<br/><audio controls>
   <source src="/audio/方法1-dm007-我是顺路过来跟你告别的-n.wav" type="audio/mpeg">
 </audio>
 <audio controls>
   <source src="/audio/方法1-dm007-我是顺路过来跟你告别的-s.wav" type="audio/mpeg">
-</audio>
+<br/></audio>
 <audio controls>
   <source src="/audio/方法1-dm007-我是顺路过来跟你告别的-su.wav" type="audio/mpeg">
 </audio>
@@ -436,6 +544,38 @@
   <source src="/audio/方法2-0002-5.wav" type="audio/mpeg">
 </audio>
 
+<h3 id="闭集健听人（ESD-0004号）-1"><a href="#闭集健听人（ESD-0004号）-1" class="headerlink" title="闭集健听人（ESD-0004号）"></a>闭集健听人（ESD-0004号）</h3><h4 id="原音-amp-克隆效果-2"><a href="#原音-amp-克隆效果-2" class="headerlink" title="原音&amp;克隆效果"></a>原音&amp;克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;是的他很狡猾，经常陷害他人&quot;</span></span><br><span class="line">2、<span class="string">&quot;她女儿和她妈妈长得很像&quot;</span></span><br><span class="line">3、<span class="string">&quot;没关系，也许他老婆会泄露秘密&quot;</span></span><br><span class="line">4、<span class="string">&quot;打远一看他们的确很是美丽&quot;</span></span><br><span class="line">5、<span class="string">&quot;我老家在北京&quot;</span></span><br><span class="line">$ 左列为原音，右列为克隆音</span><br><span class="line">$ 第一行至第五行分别为Angry、Happy、Neutral、Sad和Surprise的风格情感</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/原音-0004-1.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法2-0004-1.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-2.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法2-0004-2.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-3.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法2-0004-3.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-4.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法2-0004-4.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/原音-0004-5.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/方法2-0004-5.wav" type="audio/mpeg">
+</audio>
+
 <h3 id="开集健听人（标贝科技标准女声）-1"><a href="#开集健听人（标贝科技标准女声）-1" class="headerlink" title="开集健听人（标贝科技标准女声）"></a>开集健听人（标贝科技标准女声）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 原音请见第2章</span><br><span class="line">$ 克隆的语料内容为：</span><br><span class="line"><span class="string">&quot;邓小平与撒切尔会晤&quot;</span>（克隆时注册语句）  ---&gt;  <span class="string">&quot;跳舞好难啊&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频风格情感依次为Angry、Happy、Neutral、Sad和Surprise：</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/方法2-biaobe-跳舞好难啊-a.wav" type="audio/mpeg">
@@ -453,7 +593,32 @@
   <source src="/audio/方法2-biaobe-跳舞好难啊-su.wav" type="audio/mpeg">
 </audio>
 
-<h3 id="开集重残聋哑人（dm009）"><a href="#开集重残聋哑人（dm009）" class="headerlink" title="开集重残聋哑人（dm009）"></a>开集重残聋哑人（dm009）</h3><h4 id="原音-1"><a href="#原音-1" class="headerlink" title="原音"></a>原音</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;所幸事故未造成人员伤亡&quot;</span></span><br><span class="line">2、<span class="string">&quot;我觉得自己又胖了&quot;</span> </span><br></pre></td></tr></table></figure>
+<h3 id="开集重残聋哑人（dm014）-1"><a href="#开集重残聋哑人（dm014）-1" class="headerlink" title="开集重残聋哑人（dm014）"></a>开集重残聋哑人（dm014）</h3><h4 id="原音-2"><a href="#原音-2" class="headerlink" title="原音"></a>原音</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;我觉得自己又胖了&quot;</span></span><br><span class="line">2、<span class="string">&quot;我们应该永葆青春&quot;</span> </span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/dm008-呜呜1.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm008-呜呜2.wav" type="audio/mpeg">
+</audio>
+
+<h4 id="克隆效果-3"><a href="#克隆效果-3" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 克隆的语料内容为：</span><br><span class="line">五句平均嵌入码  ---&gt;  <span class="string">&quot;你是今天的主要负责人&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频的风格依次由闭集说话人Angry、Happy、Neutral、Sad和Surprise的基频风格迁移而成：</span><br></pre></td></tr></table></figure>
+<audio controls>
+  <source src="/audio/dm008_ave5_4.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm008_ave5_3.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/dm008_ave5_11.wav" type="audio/mpeg">
+</audio>
+<audio controls>
+  <source src="/audio/dm008_ave5_9.wav" type="audio/mpeg">
+</audio>
+<br/><audio controls>
+  <source src="/audio/dm008_ave5_5.wav" type="audio/mpeg">
+</audio>
+
+<h3 id="开集重残聋哑人（dm009）"><a href="#开集重残聋哑人（dm009）" class="headerlink" title="开集重残聋哑人（dm009）"></a>开集重残聋哑人（dm009）</h3><h4 id="原音-3"><a href="#原音-3" class="headerlink" title="原音"></a>原音</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 语料表达内容分别为：</span><br><span class="line">1、<span class="string">&quot;所幸事故未造成人员伤亡&quot;</span></span><br><span class="line">2、<span class="string">&quot;我觉得自己又胖了&quot;</span> </span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/原音-dm009-呜呜1.wav" type="audio/mpeg">
 </audio>
@@ -461,20 +626,20 @@
   <source src="/audio/原音-dm009-呜呜2.wav" type="audio/mpeg">
 </audio>
 
-<h4 id="克隆效果-2"><a href="#克隆效果-2" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 克隆的语料内容为：</span><br><span class="line"><span class="string">&quot;不要轻易相信别人&quot;</span>（克隆时注册语句）  ---&gt;  <span class="string">&quot;跳舞好难啊&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频的风格依次由闭集说话人Angry、Happy、Neutral、Sad和Surprise的基频风格迁移而成：</span><br></pre></td></tr></table></figure>
+<h4 id="克隆效果-4"><a href="#克隆效果-4" class="headerlink" title="克隆效果"></a>克隆效果</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ 克隆的语料内容为：</span><br><span class="line">五句平均嵌入码  ---&gt;  <span class="string">&quot;跳舞好难啊&quot;</span>（克隆语句）   </span><br><span class="line">&amp; 以下音频的风格依次由闭集说话人Angry、Happy、Neutral、Sad和Surprise的基频风格迁移而成：</span><br></pre></td></tr></table></figure>
 <audio controls>
   <source src="/audio/dm009-angry.wav" type="audio/mpeg">
 </audio>
 <audio controls>
   <source src="/audio/dm009-happy.wav" type="audio/mpeg">
 </audio>
-<audio controls>
+<br/><audio controls>
   <source src="/audio/dm009-neutral.wav" type="audio/mpeg">
 </audio>
 <audio controls>
   <source src="/audio/dm009-sad.wav" type="audio/mpeg">
 </audio>
-<audio controls>
+<br/><audio controls>
   <source src="/audio/dm009-sur.wav" type="audio/mpeg">
 </audio>
 
